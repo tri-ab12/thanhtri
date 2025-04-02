@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #004080;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  button {
+    background: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .success {
+    margin-top: 50px;
+    color: green;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+  }
+  

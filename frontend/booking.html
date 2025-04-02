@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhập Thông Tin Đặt Phòng</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="booking-form">
+    <h2>📋 Nhập Thông Tin Đặt Phòng</h2>
+    <form id="booking-form">
+      <label for="fullname">Họ và Tên:</label>
+      <input type="text" id="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <button type="submit">Tiếp Tục</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("booking-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      window.location.href = "confirm.html";
+    });
+  </script>
+
+</body>
+</html>

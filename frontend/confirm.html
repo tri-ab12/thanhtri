@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chọn Ngày Nhận & Trả</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="date-selection">
+    <h2>📆 Chọn Ngày Nhận & Trả</h2>
+    <form id="date-form">
+      <label for="check-in">Ngày Nhận:</label>
+      <input type="date" id="check-in" required>
+
+      <label for="check-out">Ngày Trả:</label>
+      <input type="date" id="check-out" required>
+
+      <button type="submit">Tiếp Tục</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById("date-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      window.location.href = "payment.html";
+    });
+  </script>
+
+</body>
+</html>
